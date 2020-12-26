@@ -1,0 +1,24 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
+#  instance:
+#    hostname: clientName
+spring:
+  application:
+    name: product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: Candy520!
+    url: jdbc:mysql://192.168.112.133:13309/sell?charaterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+      #忽略为null的返回值字段
+  jackson:
+    default-property-inclusion: non_null
+server:
+  servlet:
+    context-path: /
+  port: 8080

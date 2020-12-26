@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="user-common" />
+        <module name="client" />
+        <module name="order-client" />
+        <module name="product-common" />
+        <module name="user-client" />
+        <module name="product-client" />
+        <module name="order-server" />
+        <module name="user-server" />
+        <module name="product-server" />
+        <module name="eureka" />
+        <module name="config" />
+        <module name="api-gateway" />
+        <module name="config-repo" />
+        <module name="common" />
+        <module name="order-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
+      <module name="client" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="config-repo" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="order-client" target="1.8" />
+      <module name="order-common" target="1.8" />
+      <module name="order-server" target="1.8" />
+      <module name="product" target="1.8" />
+      <module name="product-client" target="1.8" />
+      <module name="product-common" target="1.8" />
+      <module name="product-server" target="1.8" />
+      <module name="product-server (1)" target="1.8" />
+      <module name="sc-springcloud-learn" target="1.8" />
+      <module name="user" target="1.8" />
+      <module name="user-client" target="1.8" />
+      <module name="user-common" target="1.8" />
+      <module name="user-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="" />
+      <module name="eureka" options="" />
+      <module name="order-client" options="" />
+      <module name="order-common" options="" />
+      <module name="order-server" options="" />
+      <module name="product-client" options="" />
+      <module name="product-common" options="" />
+      <module name="product-server" options="" />
+      <module name="user" options="" />
+    </option>
+  </component>
+</project>

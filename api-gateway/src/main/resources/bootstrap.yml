@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+  instance:
+    prefer-ip-address: true
+
+
+logging:
+  level:
+    org.springframework.cloud.netflix.zuul: debug
+#查看所有节点的话需要配置这一段
+management:
+  endpoints:
+    web:
+      expose: "*"
+

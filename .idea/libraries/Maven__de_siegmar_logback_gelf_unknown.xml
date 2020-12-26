@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.siegmar:logback-gelf:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/siegmar/logback-gelf/unknown/logback-gelf-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/siegmar/logback-gelf/unknown/logback-gelf-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/siegmar/logback-gelf/unknown/logback-gelf-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

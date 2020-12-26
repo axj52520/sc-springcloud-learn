@@ -1,0 +1,34 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+  instance:
+    prefer-ip-address: true
+#  instance:
+#    hostname: clientName
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/candymo/config-repo.git
+          username: axj52520@126.com
+          password: xjwan1413520
+          #配置本地仓库的指定位置
+          basedir: C:\Users\Candy520\Desktop\种植圈首页文件备份\basedir
+  #整合rabbitMQ 添加依赖后如不配置默认找localhost:5672?
+  rabbitmq:
+    host: 192.168.112.133
+    port: 5673
+    username: guest
+    password: guest
+server:
+  port: 8600
+
+#把所有的springcloud的端点全部暴露出来
+management:
+  endpoints:
+    web:
+      expose: "*"

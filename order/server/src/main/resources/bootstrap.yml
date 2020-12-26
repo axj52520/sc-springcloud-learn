@@ -1,0 +1,40 @@
+
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: test
+    #多实例区分消息接受 需要定义分组
+    stream:
+      bindings:
+        myMessage:
+          group: order
+          #消息json 对象支持
+          content-type: application/json
+  zipkin:
+#    base-url: http://zipkin:9411/
+    base-url: http://192.168.112.133:9411/
+    sender:
+      type: web
+  #开启web监控 到zipkin
+  sleuth:
+    sampler:
+      #1.x配置
+      #percentage: 1
+      #2.x开启链路监控
+      probability: 1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+  instance:
+    prefer-ip-address: true
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug
+    org.springframework.cloud.bus: debug

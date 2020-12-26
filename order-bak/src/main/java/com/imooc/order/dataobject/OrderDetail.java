@@ -1,0 +1,34 @@
+package com.imooc.order.dataobject;
+
+import lombok.Data;
+import org.hibernate.annotations.DynamicUpdate;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.math.BigDecimal;
+import java.util.Date;
+
+/*
+ * Copyright is owned by YONYOU.
+ *
+ * @Package: com.yonyou.wechatsell.product.dao.dataobject
+ * @author: Candy520
+ * @date: 2019/5/20 12:36
+ */
+@Data
+@Entity
+@DynamicUpdate
+public class OrderDetail {
+
+    @Id
+    private String detailId;
+    private String orderId;
+    private String productId;
+    private String productName;
+    private BigDecimal productPrice;
+    private Integer productQuantity;
+    private String productIcon;
+    private Date createTime;
+    private Date updateTime;
+
+}
